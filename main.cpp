@@ -36,13 +36,17 @@ int main() {
     
     cout << "RGB Values:" << endl;
 
-    //create and print a few color objects
-    for(int i = 0; i < 5; i++) {
-        Color color(i * 50, i * 50, i * 50);    
-        color.printColor();
-    }
 
 
+    Color color1;               // default constructor
+    cout << "Default Constructor: \t";
+    color1.printColor();
+    Color color2(255, 10, 37);    // parameter constructor
+    cout << "Parameter Constructor: \t";
+    color2.printColor();
+    Color color3(0, 255);       // partial constructor
+    cout << "Partial Constructor: \t";
+    color3.printColor();
 
     return 0;
 }
